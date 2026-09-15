@@ -1,5 +1,3 @@
-# This workflow will install Python dependencies and perform testing
-
 name: Test Printrun
 
 on:
@@ -35,7 +33,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt install -y libdbus-1-dev libgtk-3-0 libxxf86vm1 libnotify4 libsdl2-2.0-0 libsm6 libpcre2-32-0
+          sudo apt install -y libdbus-1-dev libdbus-glib-1-dev pkg-config meson libgtk-3-0 libxxf86vm1 libnotify4 libsdl2-2.0-0 libsm6 libpcre2-32-0
 
       - name: Install Printrun dependencies
         run: |
